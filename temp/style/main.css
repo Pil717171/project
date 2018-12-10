@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column; }
+  .header-top {
+    text-transform: uppercase;
+    font-size: 10px;
+    display: flex;
+    border: solid 0.5px gray;
+    flex-direction: row;
+    height: 36px;
+    align-items: center;
+    text-decoration-color: black; }
+    .header-top_logo {
+      border-right: solid 0.5px gray; }
+    .header-top_links {
+      border-right: solid 0.5px gray;
+      display: flex;
+      justify-content: space-between; }
+    .header-top_about {
+      border-right: solid 0.5px gray;
+      display: flex;
+      justify-content: flex-end; }
+    .header-top_region {
+      display: flex;
+      justify-content: flex-end; }
+      .header-top_region_dropdown_icon {
+        margin-left: 5px; }
+        .header-top_region_dropdown_icon_link {
+          transform: rotate(90deg); }
+      .header-top_region_dropdown_menu {
+        flex-direction: column;
+        margin-left: auto;
+        justify-content: flex-end;
+        border: solid 0.5px gray;
+        border-top: none;
+        display: none; }
+        .header-top_region_dropdown_menu--open {
+          display: block;
+          transition: 1s; }
+        .header-top_region_dropdown_menu_world {
+          display: flex;
+          flex-direction: row;
+          border-bottom: solid 0.5px gray; }
+        .header-top_region_dropdown_menu_change {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 15px; }
+        .header-top_region_dropdown_menu_inter {
+          font-weight: bold;
+          font-size: 13px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 5px; }
+        .header-top_region_dropdown_menu_samerica {
+          padding-top: 23px;
+          border-bottom: solid 0.5px gray; }
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+  a:hover {
+    transition: 0.25s;
+    text-decoration: underline;
+    color: #959991; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
