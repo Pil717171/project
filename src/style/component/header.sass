@@ -5,6 +5,15 @@ $font: "Helvetica Neue", Helvetica, Arial, sans-serif
     display: flex
     font-family: $font 
     flex-direction: column
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 2
+    background: white
+    transition: 0.6s
+    &--none
+        transform: translateY(-36px)
+        transition: 0.6s
     &-top
         text-transform: uppercase
         font-size: 10px
@@ -14,6 +23,7 @@ $font: "Helvetica Neue", Helvetica, Arial, sans-serif
         height: 36px
         align-items: center
         text-decoration-color: black
+        position: relative
         &_logo
             border-right: $border
         &_links
@@ -34,12 +44,15 @@ $font: "Helvetica Neue", Helvetica, Arial, sans-serif
             &_dropdown_menu
                 flex-direction: column
                 margin-left: auto
-                justify-content: flex-end
+                justify-content: center
                 border: $border
                 border-top: none
                 display: none
                 z-index: 1
                 background: white
+                position: absolute
+                top: 36px
+                right: 0
                 &--open
                     display: block
                     transition: 1s 
@@ -73,8 +86,7 @@ $font: "Helvetica Neue", Helvetica, Arial, sans-serif
         align-items: center
         justify-content: center
         padding: 0
-        position: absolute
-        margin-top: 36px
+        position: relative
         &_menu 
             display: flex
             flex-direction: row
@@ -120,6 +132,7 @@ $font: "Helvetica Neue", Helvetica, Arial, sans-serif
                     font-size: 13px
                     display: none
                     border: $border
+                    z-index: 1
                     & > div
                         margin: 10px
                     &_line
@@ -129,7 +142,12 @@ $font: "Helvetica Neue", Helvetica, Arial, sans-serif
                         text-transform: uppercase
                     &--open  
                         display: block  
-                        
+// .content
+//     margin-top: 115px
+//     position: relative
+//     z-index: 1
+   
+                           
 
             
             
