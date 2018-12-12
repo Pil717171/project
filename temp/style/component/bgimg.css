@@ -1,0 +1,36 @@
+.bgimg {
+  margin-top: 113px; }
+  .bgimg-tires {
+    height: 450px;
+    width: 100%;
+    background-image: url(.././assets/bg-motorsport.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+    margin-bottom: 240px; }
+    .bgimg-tires_h {
+      font-size: 50px; }
+    .bgimg-tires_text {
+      font-size: 12px;
+      width: 800px; }
+  .bgimg-wheels {
+    position: absolute;
+    top: 46%;
+    left: 25%; }
+    .bgimg-wheels_img {
+      height: 70%;
+      width: 70%; }
+  .bgimg-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 12px;
+    flex-direction: column; }
+    .bgimg-link > a:hover {
+      text-decoration: none; }
+    .bgimg-link > a > img {
+      margin-top: 20px; }
