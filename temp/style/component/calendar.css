@@ -13,20 +13,23 @@
     .calendar-buttons_left {
       color: #b6b8ba;
       display: inline-block;
-      margin-right: 10px; }
+      margin-right: 10px;
+      transition: 0.5s; }
       .calendar-buttons_left:hover {
-        color: black; }
+        color: black;
+        cursor: pointer; }
     .calendar-buttons_right {
       color: #b6b8ba;
       display: inline-block;
-      margin-left: 10px; }
+      margin-left: 10px;
+      transition: 0.5s; }
       .calendar-buttons_right:hover {
-        color: black; }
+        color: black;
+        cursor: pointer; }
   .calendar-mixin {
     display: flex;
     flex-direction: row;
-    margin: 20px;
-    padding-right: 20px; }
+    transition: 0.6s; }
   .calendar-slider {
     display: flex;
     flex-direction: row;
@@ -37,16 +40,33 @@
       justify-content: center;
       align-items: center;
       border-right: solid 0.5px #b6b8ba;
-      margin-right: 30px;
-      padding: 50px;
-      font-family: Arial, Helvetica, sans-serif; }
+      padding-top: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 200px; }
     .calendar-slider_images {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
     .calendar-slider_header {
-      font-size: 13px; }
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
     .calendar-slider_data {
       font-size: 30px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
     .calendar-slider_month {
       font-size: 20px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .calendar-slider_name {
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
