@@ -30,19 +30,18 @@ window.onmouseover = function coordinate () {
   
     function drive (element) {
         element.classList.add("tires-images_tire_wheel--rotate")   
-        console.log("drive") 
     };
     
     function drive2 (element) {
         element.classList.add("tires-images--drive")
-        console.log("drive2") 
     };
 })();
 
 (function(){
-    document.querySelectorAll(".tires").forEach(function (tires) {
+
+    document.querySelectorAll(".tires").forEach(function (tires){
         tires.onmouseover = function coordinate () {
-             document.querySelectorAll(".tires_revers-images").forEach(function (images) {
+            document.querySelectorAll(".tires_revers-images").forEach(function (images) {
                 var coordImg = images.getBoundingClientRect()
                 if (coordImg.y < document.documentElement.clientHeight) {
                     drive2(images);
@@ -58,12 +57,10 @@ window.onmouseover = function coordinate () {
       
         function drive (element) {
             element.classList.add("tires_revers-images_tire_wheel--rotate")   
-            console.log("drive") 
         };
         
         function drive2 (element) {
             element.classList.add("tires_revers-images--drive")
-            console.log("drive2") 
         };
-    })    
+    })        
 })();
