@@ -14,7 +14,6 @@
 
 (function(){
 window.onmouseover = function coordinate () {
-        console.log(window) 
         document.querySelectorAll(".tires-images").forEach(function (images) {
             var coordImg = images.getBoundingClientRect()
             if (coordImg.y < document.documentElement.clientHeight) {
@@ -41,9 +40,9 @@ window.onmouseover = function coordinate () {
 })();
 
 (function(){
-    window.onclick = function coordinate () {
-            console.log(window) 
-            document.querySelectorAll(".tires_revers-images").forEach(function (images) {
+    document.querySelectorAll(".tires").forEach(function (tires) {
+        tires.onmouseover = function coordinate () {
+             document.querySelectorAll(".tires_revers-images").forEach(function (images) {
                 var coordImg = images.getBoundingClientRect()
                 if (coordImg.y < document.documentElement.clientHeight) {
                     drive2(images);
@@ -66,4 +65,5 @@ window.onmouseover = function coordinate () {
             element.classList.add("tires_revers-images--drive")
             console.log("drive2") 
         };
-    })();
+    })    
+})();
