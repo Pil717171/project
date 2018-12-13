@@ -299,6 +299,9 @@ h2 {
       justify-content: center;
       align-items: center; }
 
+.section > img {
+  width: 100%; }
+
 a {
   color: black;
   text-decoration: none;
