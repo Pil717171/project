@@ -1,0 +1,24 @@
+mixin tiresDrive (url, head_1, head_2, content)
+    div.tires 
+        div.tires-images
+            div.tires-images_tire
+                img(class="tires-images_tire_wheel" src= url, alt="tires")
+            div.tires-images_shadow
+                img(src="./assets/shadow.png")
+        div.tires-text
+            h2.tires-h2= head_1 + "  "
+                span(class= "last_word" value= head_2)= head_2     
+            p= content       
+              
+
+mixin tiresDriveRevers (url, head_1, head_2, content)
+    div.tires_revers
+        div.tires_revers-text
+            h2.tires-h2= head_1 + "  " 
+                span(class= "last_word" value= head_2)= head_2    
+            p= content  
+        div.tires_revers-images
+            div.tires_revers-images_tire
+                img(class="tires_revers-images_tire_wheel" src= url, alt="tires")
+            div.tires_revers-images_shadow
+                img(src="./assets/shadow.png")

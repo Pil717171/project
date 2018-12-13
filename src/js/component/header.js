@@ -6,9 +6,7 @@
         dropdownMenu.classList.toggle("header-top_region_dropdown_menu--open");
     }
     dropdown.onclick = dropdownOpen
-})();
 
-(function (){
     var dropdownTire = document.querySelector(".header-bottom_menu_tires_dropdown");
     var icon = document.querySelector(".header-bottom_menu_tires_icon");
     var dropdownMenuBottom = document.querySelector(".header-bottom_menu_tires");
@@ -28,9 +26,7 @@
     dropdownTire.onmouseover = dropdownTires;
     dropdownMenuBottom.onmouseout = dropdownTiresClosed;
     dropdownTire.onmouseout = dropdownTiresClosed;
-})();
 
-(function () {
     var header = document.querySelector(".header");
     var headerTop = document.querySelector(".header-top");
     var headerBottom = document.querySelector(".header-bottom")
@@ -48,5 +44,5 @@
         }
     }
     window.onscroll = coord;
-})()
+})();
     
