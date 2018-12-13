@@ -22,3 +22,19 @@ mixin tiresDriveRevers (url, head_1, head_2, content)
                 img(class="tires_revers-images_tire_wheel" src= url, alt="tires")
             div.tires_revers-images_shadow
                 img(src="./assets/shadow.png")
+
+mixin calendar (url, header, data, month, name)
+    div.calendar-slider
+        div.calendar-slider_races
+            div.calendar-slider_images
+                img(src=url alt=url)
+            div.calendar-slider_header
+                p= header
+            div.calendar-slider_line
+                p _____
+            div.calendar-slider_data
+                p= data
+            div.calendar-slider_month
+                p= month
+            div.calendar-slider_name
+                p= name    

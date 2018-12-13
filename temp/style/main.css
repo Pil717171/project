@@ -226,6 +226,59 @@ h2 {
   font-size: 36px;
   font-weight: bold; }
 
+.calendar {
+  background-color: #d4d6d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  overflow: hidden; }
+  .calendar-h {
+    font-weight: normal;
+    font-size: 40px; }
+  .calendar-buttons {
+    font-size: 35px; }
+    .calendar-buttons_left {
+      color: #b6b8ba;
+      display: inline-block;
+      margin-right: 10px; }
+      .calendar-buttons_left:hover {
+        color: black; }
+    .calendar-buttons_right {
+      color: #b6b8ba;
+      display: inline-block;
+      margin-left: 10px; }
+      .calendar-buttons_right:hover {
+        color: black; }
+  .calendar-mixin {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding-right: 20px; }
+  .calendar-slider {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; }
+    .calendar-slider_races {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-right: solid 0.5px #b6b8ba;
+      margin-right: 30px;
+      padding: 50px;
+      font-family: Arial, Helvetica, sans-serif; }
+    .calendar-slider_images {
+      margin-bottom: 10px; }
+    .calendar-slider_header {
+      font-size: 13px; }
+    .calendar-slider_data {
+      font-size: 30px;
+      text-transform: uppercase; }
+    .calendar-slider_month {
+      font-size: 20px;
+      text-transform: uppercase; }
+
 a {
   color: black;
   text-decoration: none;

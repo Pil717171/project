@@ -1,0 +1,53 @@
+.calendar
+    background-color: #d4d6d8
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 30px
+    overflow: hidden
+    &-h
+        font-weight: normal
+        font-size: 40px
+    &-buttons
+        font-size: 35px
+        &_left
+            color: #b6b8ba
+            display: inline-block
+            margin-right: 10px
+            &:hover
+                color: black
+        &_right
+            color: #b6b8ba
+            display: inline-block
+            margin-left: 10px
+            &:hover
+                color: black 
+    &-mixin
+        display: flex
+        flex-direction: row 
+        margin: 20px  
+        padding-right: 20px               
+    &-slider
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+        &_races
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            border-right: solid 0.5px #b6b8ba
+            margin-right: 30px
+            padding: 50px
+            font-family: Arial, Helvetica, sans-serif
+        &_images
+            margin-bottom: 10px
+        &_header
+            font-size: 13px 
+        &_data
+            font-size: 30px
+            text-transform: uppercase   
+        &_month
+            font-size: 20px
+            text-transform: uppercase
+                
