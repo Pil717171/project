@@ -38,3 +38,18 @@ mixin calendar (url, header, data, month, name)
                 p= month
             div.calendar-slider_name
                 p= name    
+
+mixin images (url)
+    div.section-photo_image
+        img(src=url, alt=url)                
+
+mixin news (url, header, content, link)
+    div.div.section-news_big.col-4
+        div.section-news_url
+            img(src=url alt=url)
+        div.section-news_header 
+            h6= header
+        div.section-news_content 
+            p= content
+        div.section-news_link
+            a(href="#")= link

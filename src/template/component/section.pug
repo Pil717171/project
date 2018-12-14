@@ -1,2 +1,34 @@
 div.section 
     img(src="./assets/fone.png", alt="fone")
+    div.section-racing_spot
+        p racing spot
+    div.section-social_wall
+        p social wall
+    div.section-photo
+        div.section-photo_top
+            include .././_mixin.pug 
+            +images("./assets/jordan.jpg")
+            +images("./assets/kimi.jpg")
+            +images("./assets/mclaren.jpg")
+            +images("./assets/mex.jpg")
+            +images("./assets/sauber.jpg")
+        div.section-photo_bottom
+            include .././_mixin.pug
+            +images("./assets/podium.jpg")
+            +images("./assets/red-bull.jpg")
+            +images("./assets/renault.jpg")
+            +images("./assets/wheel.jpg")
+            +images("./assets/mclaren2.jpg")
+    div.section-pirelli
+        p pirelli.com
+    div.section-stories
+        p история pirelli
+    div.section-text
+        p Когда эмоции и приключения выходят на первый план
+    div.section-news
+        +news("./assets/ferrari.jpg", "THE MUSEUM OF MISTAKES", "Formula 1 drivers are remembered not only for their successes, but also for their failures, Mistakes can be made anywhere – as Sebastian Vettel proved at his home German Grand Prix earlier this year. Which is still a race that he has never won… He’s in...", "ЧИТАТЬ ПОЛНОСТЬЮ >")
+        +news("./assets/san-marino.png", "F1 ON THE STREETS OF MILAN", "The Italian Grand Prix at Monza is always one of the absolute highlights of the Formula 1 calendar. The circuit’s illustrious history and unique high speeds are part of the attraction, but it is arguably the passionate home crowds that really make the...", "ЧИТАТЬ ПОЛНОСТЬЮ >")
+        +news("./assets/deg.png", "AN IDEAL LAB ON THE FINAL F1 TRACK", "On the final Sunday of November, Abu Dhabi will host its 10th grand prix.  Formula 1 history travels fast. Even back in 2000, the idea of having a grand prix in the middle of the desert was the stuff of science fiction. In 2004, Bahrain...", "ЧИТАТЬ ПОЛНОСТЬЮ >")
+        
+
+

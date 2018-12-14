@@ -299,8 +299,52 @@ h2 {
       justify-content: center;
       align-items: center; }
 
-.section > img {
-  width: 100%; }
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section > img {
+    width: 100%; }
+  .section-racing_spot {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 20px; }
+  .section-social_wall {
+    text-transform: uppercase;
+    font-size: 30px; }
+  .section-photo_top {
+    display: flex;
+    align-items: row;
+    width: 100%; }
+  .section-photo_bottom {
+    display: flex;
+    align-items: row;
+    width: 100%; }
+  .section-photo_image {
+    margin: 5px; }
+    .section-photo_image > img {
+      width: 100%;
+      height: 100%; }
+  .section-news {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .section-news_big {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; }
+      .section-news_big > img {
+        width: 100%;
+        height: 100%; }
+    .section-news_content > p {
+      font-size: 13px;
+      padding-right: 11%;
+      padding-left: 11%; }
+    .section-news_link {
+      font-size: 15px; }
 
 a {
   color: black;
