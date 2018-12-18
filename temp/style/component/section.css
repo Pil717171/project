@@ -1,14 +1,19 @@
 .section {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 380px;
+  z-index: 2;
+  position: relative;
+  background-color: white; }
   .section > img {
     width: 100%; }
   .section-racing_spot {
     background: black;
     color: white;
     text-transform: uppercase;
-    padding: 0 20px; }
+    padding: 0 20px;
+    margin: 10px; }
   .section-social_wall {
     text-transform: uppercase;
     font-size: 30px; }
@@ -25,6 +30,17 @@
     .section-photo_image > img {
       width: 100%;
       height: 100%; }
+  .section-pirelli {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 20px;
+    margin: 10px; }
+  .section-stories {
+    text-transform: uppercase;
+    font-size: 30px; }
+  .section-text {
+    font-size: 10px; }
   .section-news {
     display: flex;
     flex-direction: row;

@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   background: white;
   transition: 0.6s; }
   .header--none {
@@ -141,7 +141,10 @@
             display: block; }
 
 .bgimg {
-  margin-top: 113px; }
+  margin-top: 113px;
+  z-index: 2;
+  position: relative;
+  background-color: white; }
   .bgimg-tires {
     height: 450px;
     width: 100%;
@@ -182,7 +185,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 35px; }
+  padding-top: 35px;
+  position: relative;
+  z-index: 2;
+  background-color: white; }
   .tires-images {
     position: relative;
     width: 50%;
@@ -203,8 +209,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 35px;
-  overflow: hidden; }
+  padding-top: 35px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  background-color: white; }
   .tires_revers-images {
     position: relative;
     width: 50%;
@@ -232,7 +241,9 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 2;
+  position: relative; }
   .calendar-h {
     font-weight: normal;
     font-size: 40px; }
@@ -302,14 +313,19 @@ h2 {
 .section {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 380px;
+  z-index: 2;
+  position: relative;
+  background-color: white; }
   .section > img {
     width: 100%; }
   .section-racing_spot {
     background: black;
     color: white;
     text-transform: uppercase;
-    padding: 0 20px; }
+    padding: 0 20px;
+    margin: 10px; }
   .section-social_wall {
     text-transform: uppercase;
     font-size: 30px; }
@@ -326,6 +342,17 @@ h2 {
     .section-photo_image > img {
       width: 100%;
       height: 100%; }
+  .section-pirelli {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 20px;
+    margin: 10px; }
+  .section-stories {
+    text-transform: uppercase;
+    font-size: 30px; }
+  .section-text {
+    font-size: 10px; }
   .section-news {
     display: flex;
     flex-direction: row;
@@ -345,6 +372,83 @@ h2 {
       padding-left: 11%; }
     .section-news_link {
       font-size: 15px; }
+
+.footer {
+  width: 100%;
+  height: 350px;
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  z-index: 1; }
+  .footer-top {
+    border-bottom: solid 0.5px #505256;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%; }
+    .footer-top_right {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .footer-top_right_text {
+        padding-top: 10px;
+        padding-right: 15px; }
+      .footer-top_right_img {
+        height: 30px; }
+    .footer-top_left {
+      padding-top: 10px; }
+  .footer-center {
+    border-bottom: solid 0.5px #505256;
+    padding-top: 10px;
+    height: 55%;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-size: 10px; }
+    .footer-center_left_link {
+      color: white;
+      font-size: 10px;
+      margin-right: 70px; }
+    .footer-center_right {
+      text-transform: uppercase;
+      font-size: 10px; }
+      .footer-center_right_link {
+        color: white; }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column; }
+    .footer-bottom_top {
+      position: relative;
+      height: 52px;
+      width: 100%;
+      border-bottom: solid 0.5px #505256; }
+    .footer-bottom_bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .footer-bottom_bottom_left {
+        font-size: 10px; }
+      .footer-bottom_bottom_right {
+        font-size: 10px;
+        text-transform: uppercase;
+        justify-content: flex-end;
+        align-items: flex-end; }
+        .footer-bottom_bottom_right > a {
+          color: white;
+          margin: 0 15px; }
 
 a {
   color: black;

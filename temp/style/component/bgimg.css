@@ -1,5 +1,8 @@
 .bgimg {
-  margin-top: 113px; }
+  margin-top: 113px;
+  z-index: 2;
+  position: relative;
+  background-color: white; }
   .bgimg-tires {
     height: 450px;
     width: 100%;
