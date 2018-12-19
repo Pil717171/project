@@ -22,9 +22,9 @@
   .bgimg-wheels {
     position: absolute;
     top: 46%;
-    left: 25%; }
+    left: 25%;
+    margin: 0 auto; }
     .bgimg-wheels_img {
-      height: 70%;
       width: 70%; }
   .bgimg-link {
     display: flex;

@@ -27,22 +27,22 @@
     dropdownMenuBottom.onmouseout = dropdownTiresClosed;
     dropdownTire.onmouseout = dropdownTiresClosed;
 
-    var header = document.querySelector(".header");
-    var headerTop = document.querySelector(".header-top");
-    var headerBottom = document.querySelector(".header-bottom")
+    // var header = document.querySelector(".header");
+    // var headerTop = document.querySelector(".header-top");
+    // var headerBottom = document.querySelector(".header-bottom")
     
-    function coord () {
-        var coord = headerTop.getBoundingClientRect()
-        var height = coord.height
-        var scrolling = window.pageYOffset
+    // // function coord () {
+    // //     var coord = headerTop.getBoundingClientRect()
+    // //     var height = coord.height
+    // //     var scrolling = window.pageYOffset
 
-        if (scrolling > height) {
-            header.classList.add("header--none")
-        }
-        else {
-            header.classList.remove("header--none")
-        }
-    }
-    window.onscroll = coord;
+    // //     if (scrolling > height) {
+    // //         header.classList.add("header--none")
+    // //     }
+    // //     else {
+    // //         header.classList.remove("header--none")
+    // //     }
+    // // }
+    // // window.onscroll = coord;
 })();
     
