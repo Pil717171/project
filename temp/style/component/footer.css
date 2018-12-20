@@ -8,7 +8,8 @@
   flex-direction: column;
   position: fixed;
   bottom: 0;
-  z-index: 1; }
+  z-index: 1;
+  overflow: hidden; }
   .footer-top {
     border-bottom: solid 0.5px #505256;
     text-transform: uppercase;

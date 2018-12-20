@@ -6,14 +6,31 @@
   padding-top: 35px;
   position: relative;
   z-index: 2;
-  background-color: white; }
+  background-color: white;
+  overflow: hidden; }
+  @media (max-width: 1160px) {
+    .tires {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-item: center;
+      width: 100%; } }
   .tires-images {
     position: relative;
     width: 50%;
-    right: 22%; }
+    right: 28%; }
+    @media (max-width: 1160px) {
+      .tires-images {
+        position: relative;
+        margin: 0 auto; } }
     .tires-images--drive {
       transform: translate(100%, 0);
       transition: transform 1s ease-out; }
+      @media (max-width: 1160px) {
+        .tires-images--drive {
+          position: relative;
+          margin: 0 auto;
+          right: 50%; } }
     .tires-images_tire_wheel--rotate {
       transform: rotate(180deg);
       transition: transform 1s ease-out; }
@@ -21,6 +38,15 @@
     width: 50%;
     margin-right: 15%;
     margin-left: 15%; }
+    @media (max-width: 1160px) {
+      .tires-text {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        padding: 25px; } }
+  @media (max-width: 1160px) {
+    .tires-h2 {
+      text-align: center; } }
 
 .tires_revers {
   width: 100%;
@@ -32,13 +58,29 @@
   position: relative;
   z-index: 2;
   background-color: white; }
+  @media (max-width: 1160px) {
+    .tires_revers {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-item: center;
+      width: 100%; } }
   .tires_revers-images {
     position: relative;
     width: 50%;
-    left: 22%; }
+    left: 28%; }
+    @media (max-width: 1160px) {
+      .tires_revers-images {
+        position: relative;
+        margin: 0 auto; } }
     .tires_revers-images--drive {
       transform: translate(-90%, 0);
       transition: transform 1s ease-out; }
+      @media (max-width: 1160px) {
+        .tires_revers-images--drive {
+          position: relative;
+          margin: 0 auto;
+          left: 46%; } }
     .tires_revers-images_tire_wheel--rotate {
       transform: rotate(-180deg);
       transition: transform 1s ease-out; }
@@ -46,6 +88,12 @@
     width: 50%;
     margin-right: 15%;
     margin-left: 15%; }
+    @media (max-width: 1160px) {
+      .tires_revers-text {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        padding: 25px; } }
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;

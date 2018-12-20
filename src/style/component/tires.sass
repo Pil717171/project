@@ -7,13 +7,27 @@
     position: relative
     z-index: 2
     background-color: white
+    overflow: hidden
+    @media (max-width: 1160px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-item: center
+        width: 100%
     &-images
         position: relative
         width: 50%
-        right: 22% 
+        right: 28% 
+        @media (max-width: 1160px)
+            position: relative
+            margin: 0 auto
         &--drive
             transform: translate(100%,0)
             transition: transform 1s ease-out
+            @media (max-width: 1160px)
+                position: relative
+                margin: 0 auto
+                right: 50%
         &_tire_wheel
             &--rotate
                 transform: rotate(180deg)
@@ -22,6 +36,15 @@
         width: 50%
         margin-right: 15%
         margin-left: 15%
+        @media (max-width: 1160px)
+            position: relative
+            margin: 0 auto
+            width: 100%
+            padding: 25px
+    &-h2
+        @media (max-width: 1160px)
+            text-align: center
+
 .tires_revers
     width: 100%
     display: flex
@@ -32,13 +55,26 @@
     position: relative
     z-index: 2
     background-color: white
+    @media (max-width: 1160px)
+        display: flex
+        flex-direction: column-reverse
+        justify-content: center
+        align-item: center
+        width: 100%
     &-images
         position: relative
         width: 50%
-        left: 22% 
+        left: 28%
+        @media (max-width: 1160px)
+            position: relative
+            margin: 0 auto 
         &--drive
             transform: translate(-90%,0)
             transition: transform 1s ease-out
+            @media (max-width: 1160px)
+                position: relative
+                margin: 0 auto
+                left: 46%
         &_tire_wheel
             &--rotate
                 transform: rotate(-180deg)
@@ -47,7 +83,11 @@
         width: 50%
         margin-right: 15%
         margin-left: 15%
-
+        @media (max-width: 1160px)
+            position: relative
+            margin: 0 auto
+            width: 100%
+            padding: 25px
 h2
     font-family: Arial, Helvetica, sans-serif
     text-transform: uppercase

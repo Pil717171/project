@@ -5,7 +5,8 @@
   margin-bottom: 380px;
   z-index: 2;
   position: relative;
-  background-color: white; }
+  background-color: white;
+  overflow: hidden; }
   .section > img {
     width: 100%; }
   .section-racing_spot {
@@ -46,17 +47,22 @@
     flex-direction: row;
     align-items: center;
     justify-content: center; }
+    @media (max-width: 900px) {
+      .section-news {
+        display: flex;
+        flex-direction: column; } }
     .section-news_big {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start; }
-      .section-news_big > img {
-        width: 100%;
-        height: 100%; }
+    .section-news_url > img {
+      width: 100%; }
     .section-news_content > p {
-      font-size: 13px;
-      padding-right: 11%;
-      padding-left: 11%; }
+      font-size: 13px; }
+      @media (max-width: 1160px) {
+        .section-news_content > p {
+          position: relative;
+          width: 100%; } }
     .section-news_link {
       font-size: 15px; }

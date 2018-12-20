@@ -6,6 +6,7 @@
     z-index: 2
     position: relative
     background-color: white
+    overflow: hidden
     & > img
         width: 100%
     &-racing_spot
@@ -47,19 +48,22 @@
         flex-direction: row 
         align-items: center
         justify-content: center
+        @media (max-width: 900px)
+            display: flex
+            flex-direction: column
         &_big 
             display: flex
             flex-direction: column 
             align-items: center
             justify-content: flex-start 
-            & > img
-                width: 100%
-                height: 100%  
+        &_url > img
+                width: 100% 
         &_content
             & > p
                 font-size: 13px 
-                padding-right: 11%
-                padding-left: 11%         
+                @media (max-width: 1160px)
+                    position: relative
+                    width: 100%       
         &_link
             font-size: 15px
                    
