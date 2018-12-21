@@ -1,0 +1,293 @@
+$border: solid 0.5px #d2d8d6
+$font: "Helvetica Neue", Helvetica, Arial, sans-serif
+
+.header 
+    display: flex
+    font-family: $font 
+    flex-direction: column
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 3
+    background: white
+    transition: 0.6s
+    &--none
+        transform: translateY(-36px)
+        transition: 0.6s
+    &-top
+        text-transform: uppercase
+        font-size: 9px
+        display: flex
+        border: $border
+        flex-direction: row
+        height: 36px
+        align-items: center
+        text-decoration-color: black
+        position: relative
+        @media (max-width: 1160px)
+                display: none
+        &_dropdown
+            display: none
+            width: 100%
+            @media (max-width: 1160px)
+                display: block
+                height: 36px
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+            &_span
+                cursor: pointer
+                padding: 5px 
+                text-transform: uppercase
+                transition: 0.3s
+                &:hover
+                    color: #989ba0
+                &_bird
+                    display: inline-block
+                    transform: rotate(90deg)
+                    margin-right: 20px
+                    font-size: 15px
+                    transition: 0.5s
+                    &__rotate
+                        transform: rotate(270deg)
+                &_text
+                    font-size: 15px
+            &_items
+                &__closed
+                    background: white
+                    display: none
+                    position: absolute
+                    z-index: 5
+                    width: 100%
+                    margin-top: 37px
+                    padding-left: 25px
+                    text-transform: uppercase
+                    font-size: 15px
+                    line-height: 10px
+                    padding-top: 13px
+                &__open
+                    display: block
+            &_region
+                &_world
+                    border: $border
+                &_span
+                    text-transform: uppercase
+                    padding: 5px
+                    cursor: pointer
+                    transition: 0.3s
+                    &_text
+                        font-size: 12px
+                    &:hover
+                        color: #989ba0
+                    &_bird
+                        padding-left: 10px
+                        padding-right: 10px
+                        display: inline-block
+                        font-size: 15px
+                        transform: rotate(90deg)
+                        transition: 0.5s
+                        &__rotate
+                            transform: rotate(270deg)
+                &__closed
+                    display: none 
+                    margin-top: 37px
+                    position: absolute
+                    margin-top: 37px
+                    right: 0
+                    z-index: 10
+
+                &__open
+                    display: block         
+        &_logo
+            border-right: $border
+        &_links
+            border-right: $border
+            display: flex
+            justify-content: space-between
+        &_about
+            border-right: $border
+            display: flex
+            justify-content: flex-end        
+        &_region
+            display: flex
+            justify-content: flex-end      
+            &_dropdown_icon
+                margin-left: 5px
+                &_link
+                    transform: rotate(90deg)
+            &_dropdown_menu
+                flex-direction: column
+                margin-left: auto
+                justify-content: center
+                border: $border
+                border-top: none
+                display: none
+                z-index: 1
+                background: white
+                position: absolute
+                top: 36px
+                right: 0
+                &--open
+                    display: block
+                    transition: 1s 
+                &_world
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    width: 100%
+                    padding-bottom: 10px
+                    &_cont
+                        & > img
+                            width: 90%
+                &_change
+                    display: flex
+                    align-items: center 
+                    justify-content: center 
+                    text-transform: uppercase
+                    font-weight: bold
+                    font-size: 15px
+                &_inter
+                    font-weight: bold
+                    font-size: 13px
+                    display: flex
+                    align-items: center 
+                    justify-content: center
+                    margin-top: 5px
+                    height: 102px  
+    &-bottom
+        display: flex
+        flex-direction: row
+        height: 78px
+        border: $border
+        align-items: center
+        justify-content: center
+        padding: 0
+        position: relative
+        @media (max-width: 1160px)
+            display: none
+        &_dropdown
+            height: 78px
+            width: 100%
+            background: white
+            border: $border
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            position: absolute
+            margin-top: 36px
+            @media (min-width: 1160px)
+                display: none
+            &_items
+                &__closed
+                    background: white
+                    color: white
+                    display: flex
+                    flex-direction: column
+                    width: 140px
+                    height: 200px
+                    position: absolute
+                    top: 1px
+                    right: -145px
+                    justify-content: center
+                    align-items: flex-start
+                    padding-left: 10px
+                    line-height: 10px
+                    padding-top: 15px
+                    transition: 0.6s
+                    text-transform: uppercase
+                    font-size: 15px
+                &__open
+                    transform: translateX(-135px)
+            &_item
+                link: white
+            &_span
+                &_bird
+                    font-size: 30px
+                    display: inline-block
+                    transform: rotate(90deg)
+                    transition: 0.6s
+                    cursor: pointer
+                    padding-right: 10px
+                    &:hover
+                        color: #989ba0
+                    &__open
+                        transform: translateX(-135px)
+
+        &_logo 
+            & > a > img
+                width: 80%
+            &_dropdown
+                height: 78px
+                border: $border
+                & > a > img
+                    width: 80%
+                    margin: 14px
+        &_menu 
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            height: 78px
+            padding: 0
+            & > div
+                display: flex
+                border: $border
+                height: 78px
+                margin: 0
+                padding: 0
+                text-transform: uppercase
+                flex-basis: inherit
+                align-items: center
+                justify-content: center
+                font-size: 13px
+                font-weight: bold
+                & > span     
+            &_tires
+                transition: 0.5s
+                &--shadow
+                    box-shadow: 0 0 10px
+                    transition: 0.5s
+                &_link
+                    margin: 0 auto    
+                &_icon
+                    padding-left: auto
+                    margin-right: 20px
+                    transform: rotate(90deg)
+                    transition: 0.5s
+                    &--rotate
+                        transform: rotate(270deg) 
+                        transition: 0.5s
+                &_dropdown
+                    position: absolute
+                    margin-top: 114px
+                    background: white
+                    height: 300px
+                    padding-left: 300px
+                    font-family: $font
+                    font-size: 13px
+                    display: none
+                    border: $border
+                    z-index: 1
+                    & > div
+                        margin: 10px
+                    &_line
+                        font-weight: bold
+                    &_text
+                        font-weight: bold
+                        text-transform: uppercase
+                    &--open  
+                        display: block  
+   
+                           
+
+            
+            
+            
+            
+           
+                              
+
+
+            
+

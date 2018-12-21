@@ -44,5 +44,31 @@
     // //     }
     // // }
     // // window.onscroll = coord;
+    var dropdownSpan = document.querySelector(".header-top_dropdown_span")
+    var dropdownSpanBird = document.querySelector(".header-top_dropdown_span_bird")
+    dropdownSpan.onclick = dropdownTopOpen
+
+    function dropdownTopOpen () {
+        document.querySelector(".header-top_dropdown_items__closed").classList.toggle("header-top_dropdown_items__open")
+        dropdownSpanBird.classList.toggle("header-top_dropdown_span_bird__rotate")
+    }
+
+    var dropdownSpanRegion = document.querySelector(".header-top_dropdown_region_span")
+    var dropdownSpanRegionBird = document.querySelector(".header-top_dropdown_region_span_bird")
+    dropdownSpanRegion.onclick = dropdownTopRegionOpen
+
+    function dropdownTopRegionOpen () {
+        document.querySelector(".header-top_dropdown_region__closed").classList.toggle("header-top_dropdown_region__open")
+        dropdownSpanRegionBird.classList.toggle("header-top_dropdown_region_span_bird__rotate")
+    }
+
+    var dropdownBottom = document.querySelector(".header-bottom_dropdown_span")
+    var dropdownBottomBird = document.querySelector(".header-bottom_dropdown_span_bird")
+    dropdownBottom.onclick = dropdownBottomOpen
+
+    function dropdownBottomOpen () {
+        document.querySelector(".header-bottom_dropdown_items__closed").classList.toggle("header-bottom_dropdown_items__open")
+        dropdownBottomBird.classList.toggle("header-bottom_dropdown_span_bird__open")
+    }
 })();
     
